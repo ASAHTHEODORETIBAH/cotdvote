@@ -1,0 +1,19 @@
+table{
+    background:hsla(208, 86.80%, 79.20%, 0.48);
+    border: 2px hsl(243, 59.40%, 72.90%) ;
+    font-size:1em;
+    box-shadow:0px 1px 10px #201823;
+    text-align:center;  
+    
+}
+tr{height:3em;}
+th{color:rgb(76, 76, 245);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    width:50em;
+    background:rgb(248, 206, 235);
+}
+td{ font-family: 'Times New Roman', Times, serif;color: teal;font-size: 24px;}
+em{color:orange; font-weight:bold;}
+
+	
