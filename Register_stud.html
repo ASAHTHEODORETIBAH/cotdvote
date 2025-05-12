@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="formstyle.css">
+    <title>Registration/Login Page</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form method="POST" action="registration.php">
+                <h1>REGISTER</h1><br>
+                <input type="text" name="txtName" placeholder="Name" required>
+                <input type="text" name="txtMat" placeholder="Matricule" required>
+                <input type="email" name="txtEmail" placeholder="Email" required>
+                <span style="display: flex;">
+                <div> 
+                    <label>Department</label>
+                    <select name="txtDepart" required>                         
+                        <option>Computer Engineering</option>
+                        <option>Mechanical Engineering</option>
+                        <option>Electrical Engineering</option>
+                    </select>
+              </div>
+              <div> <label>Level</label>
+                    <span>
+                        <select name="txtlevel" required>                         
+                            <option>200</option>
+                            <option>300</option>
+                            <option>400</option>
+                        </select>
+                    </span>
+                </div>
+                </span>
+                <input type="password" name="txtPass" placeholder=" Password" required>
+                <input type="password"  name="txtCpass"placeholder="Confirm Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form method="post" action="Authent.php">
+                <h1>Log-in</h1><br>
+                <input type="text"     name="txtMat" placeholder="Matricule" required>
+                <input type="password"  name="txtPass" placeholder="Password" required>
+        
+                <button type="submit">Log-in</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back To <br><EM style="color: orange;">D</EM>-VOTE</h1>
+                    <p>Register with your personal details to Gain Access to All features </p>
+                    <p><i>Already have an account?</i></p>
+                    <button class="hidden" id="login">Log-In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Welcome To <br><EM style="color: orange;">D</EM>-VOTE</h1>
+                    <p>Enter your personal details To Acess Your Account!.</p>
+                    <p><i>Do not have an account?</i></p>
+                    <button class="hidden" id="register">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scriptform.js"></script>
+</body>
+
+</html>
